@@ -52,8 +52,8 @@ const draw = (verticalLine, horizontalLine) => {
         finalCtx.lineTo(line.endX, line.endY - closeY);
       }
       for (const line of verticalLine) {
-        finalCtx.moveTo(line.startX, line.startY);
-        finalCtx.lineTo(line.endX, line.endY);
+        finalCtx.moveTo(line.startX - canvas.width / 2, line.startY);
+        finalCtx.lineTo(line.endX - canvas.width / 2, line.endY);
       }
       finalCtx.stroke();
       finalCtx.translate(-i, -j);
