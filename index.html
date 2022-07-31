@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art</title>
+  </head>
+  <body>
+    <div
+      id="draw"
+      style="
+        position: fixed;
+        margin-left: 20px;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 5px;
+      "
+    >
+      <p id="text">Draw a vertical line in the box. |</p>
+      <canvas
+        id="canvas"
+        width="200px"
+        height="100px"
+        style="border: 2px solid black"
+      ></canvas>
+      <br />
+      <button id="clear">Clear</button>
+      <button id="submit">Submit</button>
+    </div>
+    <button id="reset" style="display: none">Reset</button>
+    <canvas id="final"> </canvas>
+  </body>
+  <script src="./index.js"></script>
+</html>
